@@ -29,9 +29,9 @@ public class DeleteEventBatch implements Database.Batchable<sObject> {
         
         mail.setSubject('Batch Processing Completed');
         List<String> toAddress = new List<String>();
-        toAddress.add('sfdcpanther@gmail.com');
+        toAddress.add('aysen.kbkc@gmail.com');
         mail.setToAddresses( toAddress );
-        mail.setSenderDisplayName('SFDCPanther');
+        mail.setSenderDisplayName('AysenKa');
         
         mail.setHtmlBody('The DeleteEventBatch Batch Prcoessing has been Completed');
         List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage> {mail};
